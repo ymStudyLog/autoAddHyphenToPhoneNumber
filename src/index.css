@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css');
+
+@layer base{
+    body{
+        @apply font-[NanumSquare];
+        @apply cursor-default;
+        @apply box-border;
+    }
+    input{
+        @apply p-2 border-2 border-[#182848] ml-1 rounded-lg;
+    }
+}
+
+.project-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 450px;
+    min-height: 200px;
+}
+
+.project-img:hover{
+    background-image: linear-gradient(
+        to right,
+        rgba(24,40,72, 0.8),
+        rgba(24,40,72, 0.9)
+    ) !important;
+}
